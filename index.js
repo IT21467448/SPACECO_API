@@ -36,6 +36,9 @@ app.use((err, req, res, next) => {
     stack: err.stack,
   });
 });
+app.get("/", (req, res) => {
+    res.send("Welcome to the backend API!");
+});
 
 
 
